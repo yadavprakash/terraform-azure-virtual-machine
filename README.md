@@ -24,7 +24,7 @@ for creating AZURE resources, and you can customize the inputs as needed. Below 
 
 ```hcl
 module "virtual-machine" {
-  source                      =  "git::https://github.com/opsstation/terraform-azure-virtual-machine.git?ref=v1.0.0"
+  source                      =  "git::https://github.com/yadavprakash/terraform-azure-virtual-machine.git?ref=v1.0.0"
   ## Tags
   name                            = "apouq"
   environment                     = "test"
@@ -100,7 +100,7 @@ module "virtual-machine" {
 
 ```hcl
 module "virtual-machine" {
-  source                      =  "git::https://github.com/opsstation/terraform-azure-virtual-machine.git?ref=v1.0.0"
+  source                      =  "git::https://github.com/yadavprakash/terraform-azure-virtual-machine.git?ref=v1.0.0"
   ## Tags
   name                          = "app"
   environment                   = "test"
@@ -179,10 +179,10 @@ module "virtual-machine" {
 This example demonstrates how to create various AZURE resources using the provided modules. Adjust the input values to suit your specific requirements.
 
 ## Examples
-For detailed examples on how to use this module, please refer to the [examples](https://github.com/opsstation/terraform-azure-virtual-machine/blob/master/_example) directory within this repository.
+For detailed examples on how to use this module, please refer to the [examples](https://github.com/yadavprakash/terraform-azure-virtual-machine/blob/master/_example) directory within this repository.
 
 ## License
-This Terraform module is provided under the **MIT** License. Please see the [LICENSE](https://github.com/opsstation/terraform-azure-virtual-machine/blob/master/LICENSE) file for more details.
+This Terraform module is provided under the **MIT** License. Please see the [LICENSE](https://github.com/yadavprakash/terraform-azure-virtual-machine/blob/master/LICENSE) file for more details.
 
 ## Author
 Your Name
@@ -206,7 +206,7 @@ Replace **MIT** and **Cypik** with the appropriate license and your information.
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_labels"></a> [labels](#module\_labels) | git::https://github.com/opsstation/terraform-azure-labels.git | v1.0.0 |
+| <a name="module_labels"></a> [labels](#module\_labels) | git::https://github.com/yadavprakash/terraform-azure-labels.git | v1.0.0 |
 
 ## Resources
 
@@ -279,7 +279,7 @@ Replace **MIT** and **Cypik** with the appropriate license and your information.
 | <a name="input_location"></a> [location](#input\_location) | Location where resource should be created. | `string` | `""` | no |
 | <a name="input_machine_count"></a> [machine\_count](#input\_machine\_count) | Number of Virtual Machines to create. | `number` | `0` | no |
 | <a name="input_managed"></a> [managed](#input\_managed) | Specifies whether the availability set is managed or not. Possible values are true (to specify aligned) or false (to specify classic). Default is true. | `bool` | `true` | no |
-| <a name="input_managedby"></a> [managedby](#input\_managedby) | ManagedBy, eg 'opsstation' | `string` | `""` | no |
+| <a name="input_managedby"></a> [managedby](#input\_managedby) | ManagedBy, eg 'yadavprakash' | `string` | `""` | no |
 | <a name="input_name"></a> [name](#input\_name) | Name  (e.g. `app` or `cluster`). | `string` | `""` | no |
 | <a name="input_network_interface_sg_enabled"></a> [network\_interface\_sg\_enabled](#input\_network\_interface\_sg\_enabled) | Whether network interface security group is enabled. | `bool` | `false` | no |
 | <a name="input_network_security_group_id"></a> [network\_security\_group\_id](#input\_network\_security\_group\_id) | The ID of the Network Security Group which should be attached to the Network Interface. | `string` | `""` | no |

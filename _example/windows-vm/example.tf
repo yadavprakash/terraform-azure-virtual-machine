@@ -8,14 +8,14 @@ locals {
 }
 
 module "resource_group" {
-  source      = "git::https://github.com/opsstation/terraform-azure-resource-group.git?ref=v1.0.0"
+  source      = "git::https://github.com/yadavprakash/terraform-azure-resource-group.git?ref=v1.0.0"
   name        = local.name
   environment = local.environment
   location    = "Canada Central"
 }
 
 module "vnet" {
-  source              = "git::https://github.com/opsstation/terraform-azure-vnet.git?ref=v1.0.0"
+  source              = "git::https://github.com/yadavprakash/terraform-azure-vnet.git?ref=v1.0.0"
   name                = local.name
   environment         = local.environment
   resource_group_name = module.resource_group.resource_group_name
@@ -24,7 +24,7 @@ module "vnet" {
 }
 
 module "subnet" {
-  source               = "git::https://github.com/opsstation/terraform-azure-subnet.git?ref=v1.0.1"
+  source               = "git::https://github.com/yadavprakash/terraform-azure-subnet.git?ref=v1.0.1"
   name                 = local.name
   environment          = local.environment
   resource_group_name  = module.resource_group.resource_group_name
@@ -46,7 +46,7 @@ module "subnet" {
 }
 
 module "network_security_group" {
-  source                  = "git::https://github.com/opsstation/terraform-azure-network-security-group.git?ref=v1.0.0"
+  source                  = "git::https://github.com/yadavprakash/terraform-azure-network-security-group.git?ref=v1.0.0"
   name                    = local.name
   environment             = local.environment
   resource_group_name     = module.resource_group.resource_group_name
@@ -165,3 +165,4 @@ module "virtual-machine" {
   }]
 
 }
+
