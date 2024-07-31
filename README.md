@@ -24,7 +24,7 @@ for creating AZURE resources, and you can customize the inputs as needed. Below 
 
 ```hcl
 module "virtual-machine" {
-  source                      =  "git::https://github.com/yadavprakash/terraform-azure-virtual-machine.git?ref=v1.0.0"
+  source                      =  "git::https://github.com/yadavprakash/terraform-azure-virtual-machine.git"
   ## Tags
   name                            = "apouq"
   environment                     = "test"
@@ -100,7 +100,7 @@ module "virtual-machine" {
 
 ```hcl
 module "virtual-machine" {
-  source                      =  "git::https://github.com/yadavprakash/terraform-azure-virtual-machine.git?ref=v1.0.0"
+  source                      =  "git::https://github.com/yadavprakash/terraform-azure-virtual-machine.git"
   ## Tags
   name                          = "app"
   environment                   = "test"
